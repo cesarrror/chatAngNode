@@ -1,1 +1,39 @@
-<p>login works!</p>
+<div class="container-fluid">
+    <div class="col col-10 offset-1 col-md-4 offset-md-4 wrapper">
+        <div class="row">
+            <div class="col-12">
+                <h3 class="title">Angular Chat</h3>
+                <h5 class="subtitle">Chat creado en Angular y NodeJS</h5>
+            </div>
+            <div class="separator"></div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-8 offset-md-2">
+                <div class="wrap-form">
+                    <form #login="ngForm" (ngSubmit)="onSubmit(login)">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="exampleCheck1">
+                            <label class="custom-control-label" for="exampleCheck1">Recordar Contraseña</label>
+                        </div>
+                        <div class="right-align">
+                            <button type="submit" class="btn btn-danger">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 footer">
+                Sitio desarrollado por <a href="https://github.com/cesarrror/chatAngNode" class="author">César Rolando Ortiz Rangel</a> con <i class="fas fa-heart"></i>
+            </div>
+        </div>
+    </div>
+</div>

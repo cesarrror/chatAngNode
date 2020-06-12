@@ -1,0 +1,57 @@
+$exo2: 'Exo 2', sans-serif;
+$shadow: 'Shadows Into Light', cursive;
+
+.container-fluid
+{
+    background-color: #3f3f3f;
+    padding: 0;
+    height: 100vh;
+    font-family: $exo2;
+}
+
+.wrapper
+{
+    margin-top: 20vh;
+    height: 60vh;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0px 10px 5px #000;
+
+    .title
+    {
+        text-align: center;
+        margin-top: 40px;
+        color: #ff0000;
+    }
+    
+    .separator
+    {
+        border: solid #ff0000;
+        border-width: 1px;
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+    .subtitle
+    {
+        text-align: center;
+        color: #414141;
+    }
+
+    .wrap-form
+    {
+        margin-top: 60px;
+    }
+}
+
+
+.custom-control-label:before{
+    background-color:white;
+  }
+.custom-checkbox .custom-control-input:checked~.custom-control-label::before{
+    background-color:red;
+    outline: #990000;
+    border: #990000;
+}

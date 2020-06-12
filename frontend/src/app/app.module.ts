@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-// import { TooltipModule } from 'ngx-bootstrap/'
+import { FormsModule } from "@angular/forms";
+import { routing, appRoutingProviders } from "./app.routing";
+import { HttpClientModule } from "@angular/common/http";
 
 import { AppComponent } from './app.component';
 import { LoginComponent } from './components/login/login.component';
@@ -11,6 +13,7 @@ import { MensajesComponent } from './components/mensajes/mensajes.component';
 import { EncabezadoComponent } from './components/encabezado/encabezado.component';
 import { FormularioMensajeComponent } from './components/formulario-mensaje/formulario-mensaje.component';
 import { ErrorNfComponent } from './components/error-nf/error-nf.component';
+import { SocketioService } from './services/socketio.service';
 
 @NgModule({
   declarations: [
@@ -22,12 +25,18 @@ import { ErrorNfComponent } from './components/error-nf/error-nf.component';
     MensajesComponent,
     EncabezadoComponent,
     FormularioMensajeComponent,
-    ErrorNfComponent
+    ErrorNfComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule,
+    routing,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [
+    appRoutingProviders,
+    SocketioService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
