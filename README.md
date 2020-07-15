@@ -8,6 +8,7 @@ Use the package manager [Composer](https://getcomposer.org/download/) to install
 
 ```bash
 composer global require laravel/installer
+```
 
 ### Frontend Dependecies
 Download and install [Node](https://nodejs.org/es/download/) to run npm commands
@@ -16,3 +17,4 @@ Once node installed we can run commands with the npm package, now we must instal
 
 ```bash
 npm install -g @angular/cli
+```
