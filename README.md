@@ -1,2 +1,2 @@
-# chatAngNode
-Chat de Prueba
+# Petstore API
+API developed by César Ortiz to get the fullstack developer vacancy
